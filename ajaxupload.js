@@ -307,6 +307,10 @@
         setData: function(data){
             this._settings.data = data;
         },
+        // allow users to change target of the upload
+        setAction: function(action){
+            this._settings.action = action;
+        },
         disable: function(){            
             addClass(this._button, this._settings.disabledClass);
             this._disabled = true;
